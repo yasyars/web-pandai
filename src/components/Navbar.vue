@@ -1,9 +1,10 @@
 <template>
     <v-app-bar
         app
-        color="primary"
+        color="baseColor"
         light
         height="72px"
+        hide-on-scroll
         >
         <div class="d-flex align-center">
             <v-img
@@ -18,55 +19,24 @@
 
 
         </div>
-
         <v-spacer></v-spacer>
-        <v-btn
-            
-            href="https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&ltmpl=forms&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-            target="_blank"
-            color="text1"
-            text
-        >
-            <span class="mr-2 text-normal">Beranda</span>
-            <!-- <v-icon>mdi-open-in-new</v-icon> -->
-        </v-btn>
-        <v-btn
-            
-            href="https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&ltmpl=forms&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-            target="_blank"
-            color="text1"
-            text
-        >
-            <span class="mr-2 text-normal">Tentang</span>
-            <!-- <v-icon>mdi-open-in-new</v-icon> -->
-        </v-btn>
-        <v-btn
-            
-            href="https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&ltmpl=forms&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-            target="_blank"
-            color="text1"
-            text
-        >
-            <span class="mr-2 text-normal">Kegiatan</span>
-            <!-- <v-icon>mdi-open-in-new</v-icon> -->
-        </v-btn>
-         <v-btn
-            
-            href="https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&ltmpl=forms&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-            target="_blank"
-            color="text1"
-            text
-        >
-            <span class="mr-2 text-normal">Pendaftaran</span>
-            <!-- <v-icon>mdi-open-in-new</v-icon> -->
-        </v-btn>
+        <div>
+            <v-tabs>
+                <v-tab light to="/">Beranda</v-tab>
+                <v-tab light to="/about">Tentang</v-tab>
+                <v-tab  light to="/kegiatan">Kegiatan</v-tab>
+                <v-tab light to="/pendaftaran">Pendaftaran</v-tab>
+            </v-tabs>
+        </div>
+        
+       
         <v-btn text disabled></v-btn>
 
         <v-btn
             
             href="https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&ltmpl=forms&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
             target="_blank"
-            color="secondary"
+            color="primary"
         >
             <span class="mr-2 text-normal">MASUK</span>
             <!-- <v-icon>mdi-open-in-new</v-icon> -->
@@ -79,6 +49,12 @@
 .v-btn{
     text-transform:none !important;
     font-family: "Roboto", sans-serif;
+}
+
+.v-tab{
+    text-transform:none !important;
+    font-family: "Roboto", sans-serif;
+    height:50px;
 }
 
 </style>
