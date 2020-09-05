@@ -6,7 +6,12 @@
       <router-link class= "nav-item" to="/kegiatan">Kegiatan</router-link>
     </nav>
     <router-view/>
+    <v-spacer></v-spacer>
+    <footer>
+      <Footer/>
+    </footer>
   </div>
+
 </template>
 
 <style>
@@ -51,3 +56,21 @@
   color: #42b983;
 }
 </style>
+
+
+<script>
+//import HelloWorld from './components/HelloWorld';
+import Footer from './components/Footer';
+
+export default {
+  name: 'App',
+
+  components: {
+    Footer,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
