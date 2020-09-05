@@ -7,6 +7,7 @@
       tile
       class=flex
     >
+      <v-divider></v-divider>
       <v-card-text>
         <v-btn
           v-for="icon in icons"

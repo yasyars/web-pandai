@@ -71,11 +71,11 @@
         class="mb-5"
         cols="12"
       >
-        <h2 class="headline font-weight-bold mb-3">
+        <!-- <h2 class="headline font-weight-bold mb-3">
           Ecosystem
-        </h2>
+        </h2> -->
 
-        <v-row justify="center">
+        <!-- <v-row justify="center">
           <a
             v-for="(eco, i) in ecosystem"
             :key="i"
@@ -85,7 +85,7 @@
           >
             {{ eco.text }}
           </a>
-        </v-row>
+        </v-row> -->
       </v-col>
     </v-row>
   </v-container>
