@@ -5,6 +5,7 @@
         light
         height="72px"
         hide-on-scroll
+        class ="shadow-sm" 
         >
         <div class="d-flex align-center">
             <v-img
@@ -16,18 +17,15 @@
             transition="scale-transition"
             width="150"
             />
-
-
         </div>
         <v-spacer></v-spacer>
-        <div>
-            <v-tabs>
-                <v-tab light to="/">Beranda</v-tab>
-                <v-tab light to="/about">Tentang</v-tab>
-                <v-tab  light to="/kegiatan">Kegiatan</v-tab>
-                <v-tab light to="/pendaftaran">Pendaftaran</v-tab>
-            </v-tabs>
-        </div>
+        <v-tabs></v-tabs>
+        <v-tabs>
+            <v-tab light class="tab-custom scrollactive-item" to="/">Beranda</v-tab>
+            <v-tab light class="tab-custom scrollactive-item" to="/about">Tentang</v-tab>
+            <v-tab  light class="tab-custom scrollactive-item" to="/kegiatan">Kegiatan</v-tab>
+            <v-tab light class="tab-custom scrollactive-item" to="/pendaftaran">Pendaftaran</v-tab>
+        </v-tabs>
         
        
         <v-btn text disabled></v-btn>
@@ -38,25 +36,33 @@
             target="_blank"
             color="primary"
         >
-            <span class="mr-2 text-normal">MASUK</span>
+            <span class="">Masuk</span>
             <!-- <v-icon>mdi-open-in-new</v-icon> -->
         </v-btn>
     </v-app-bar>
 </template>
 
-<style scoped>
+<style lang="scss">
 
 .v-btn{
     text-transform:none !important;
     font-family: "Roboto", sans-serif;
+    letter-spacing: 0px ;
 }
 
 .v-tab{
     text-transform:none !important;
     font-family: "Roboto", sans-serif;
-    height:50px;
 }
 
+.tab-custom{
+    font-family: "Roboto", sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    letter-spacing: 0px ;
+    line-height: normal;
+}
 </style>
 <script>
 // import HelloWorld from './components/HelloWorld';

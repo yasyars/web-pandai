@@ -17,5 +17,5 @@ export default new Vuetify({
                 textTertiary: '#999999',
             },
         },
-    },
+    }
 });
