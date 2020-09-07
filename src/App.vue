@@ -29,8 +29,9 @@
         <v-tabs>
           <a light class="tab-custom scrollactive-item" href="#home">Beranda</a>
           <a light class="tab-custom scrollactive-item" href="#about">Tentang</a>
-          <a  light class="tab-custom scrollactive-item" href="#kegiatan">Kegiatan</a>
-          <a light class="tab-custom scrollactive-item" href="#four">Pendaftaran</a>
+          <a  light class="tab-custom scrollactive-item" href="#kegiatan">
+          Kegiatan</a>
+         <a light class="tab-custom scrollactive-item" href="#four">Pendaftaran</a>
         </v-tabs>
         
         
@@ -80,7 +81,7 @@
     line-height: normal;
     color: #666 !important;
     padding-top: 30px !important;
-    // left: 50%;
+    text-align: center !important;
 }
 
 
