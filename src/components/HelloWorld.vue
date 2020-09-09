@@ -33,7 +33,7 @@
           What's next?
         </h2>
 
-        <v-row justify="center">
+        <!-- <v-row justify="center">
           <a
             v-for="(next, i) in whatsNext"
             :key="i"
@@ -43,7 +43,7 @@
           >
             {{ next.text }}
           </a>
-        </v-row>
+        </v-row> -->
       </v-col>
 
       <v-col
@@ -54,7 +54,7 @@
           Important Links
         </h2>
 
-        <v-row justify="center">
+        <!-- <v-row justify="center">
           <a
             v-for="(link, i) in importantLinks"
             :key="i"
@@ -64,7 +64,7 @@
           >
             {{ link.text }}
           </a>
-        </v-row>
+        </v-row> -->
       </v-col>
 
       <v-col
