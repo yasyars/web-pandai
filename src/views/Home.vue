@@ -1,16 +1,42 @@
 <template>
   <div id="Home">
-    <v-container fluid style="margin: 0px; padding: 100px; width: 100%">
+    <v-container grid-list-md text-xs-center>
     <v-row class="text-center">
-      <v-col cols="12">
+      <!-- <v-col cols="12">
         <v-img
-          :src="require('../assets/banner1.jpg')"
+          :src="require('../assets/banner1.png')"
           class="my-3"
           contain
-          height="500"
+          width="100%"
         />
         
-      </v-col>
+      </v-col> -->
+
+      <v-carousel
+        cycle
+        height="550"
+        hide-delimiter-background
+        show-arrows-on-hover
+      >
+        <v-carousel-item
+          v-for="(item,i) in items"
+          :key="i"
+          :src="item.src"
+        >
+          <v-sheet
+            :color="colors[i]"
+            height="100%"
+          >
+            <v-row
+              class="fill-height"
+              align="center"
+              justify="center"
+            >
+              <div class="display-3">{{ slide }} Slide</div>
+            </v-row>
+          </v-sheet>
+        </v-carousel-item>
+      </v-carousel>
 
       <v-col class="mb-4" cols="12">
         <h1 class="display-2 font-weight-bold mb-3" style="margin-top: 30px">
@@ -124,6 +150,29 @@ export default {
   name: 'Home',
   components: {
     //HelloWorld
+  },
+    data () {
+      return {
+        colors: [
+          'indigo',
+          'warning',
+          'pink darken-2',
+          'red lighten-1',
+          'deep-purple accent-4',
+        ],
+        items: [
+          {
+            src: require('../assets/carousel1.png'),
+          },
+          {
+            src: require('../assets/carousel2.jpg'),
+          },
+          {
+            src: require('../assets/carousel3.jpg'),
+          },
+
+        ],
+      }
+    },
   }
-}
 </script>
