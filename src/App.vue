@@ -29,9 +29,8 @@
         <v-tabs>
           <a light class="tab-custom scrollactive-item" href="#home">Beranda</a>
           <a light class="tab-custom scrollactive-item" href="#about">Tentang</a>
-          <a  light class="tab-custom scrollactive-item" href="#kegiatan">
-          Kegiatan</a>
-         <a light class="tab-custom scrollactive-item" href="#four">Pendaftaran</a>
+          <a  light class="tab-custom scrollactive-item" href="#kegiatan">Kegiatan</a>
+         <a light class="tab-custom scrollactive-item" href="#four">Peserta</a>
         </v-tabs>
         
         

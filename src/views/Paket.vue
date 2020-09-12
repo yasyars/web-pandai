@@ -57,8 +57,9 @@
         </v-card-text>
       </div>
     </v-expand-transition>
-
+  
   </v-card>
+  
 </template>
 
 <script>
