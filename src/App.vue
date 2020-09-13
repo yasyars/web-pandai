@@ -60,9 +60,11 @@
 
   <a name="kegiatan" id="kegiatan"></a>
   <section>
-    <Kegiatan/>
+    <!-- <Kegiatan/> -->
+    <router-view></router-view>
   </section>
 
+  <!-- <router-view></router-view> -->
     <v-spacer></v-spacer>
     <footer>
       <Footer/>
@@ -123,7 +125,7 @@ body {
 import Footer from './components/Footer';
 import Home from './views/Home';
 import About from './views/About';
-import Kegiatan from './views/Kegiatan';
+// import Kegiatan from './views/Kegiatan';
 
 
 
@@ -135,7 +137,7 @@ export default {
     Footer,
     Home,
     About,
-    Kegiatan,
+    // Kegiatan,
   },
 
   data: () => ({
