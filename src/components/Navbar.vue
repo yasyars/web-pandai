@@ -18,26 +18,21 @@
             width="150"
             />
         </div>
-        <v-spacer></v-spacer>
+        <v-tabs></v-tabs>
         <v-tabs></v-tabs>
         <v-tabs>
-            <v-tab light class="tab-custom scrollactive-item" to="/">Beranda</v-tab>
-            <v-tab light class="tab-custom scrollactive-item" to="/about">Tentang</v-tab>
-            <v-tab  light class="tab-custom scrollactive-item" to="/kegiatan">Kegiatan</v-tab>
-            <v-tab light class="tab-custom scrollactive-item" to="/pendaftaran">Pendaftaran</v-tab>
+            <v-tab light class="tab-custom" to="/">Beranda</v-tab>
+            <v-tab light class="tab-custom" to="/about">Tentang</v-tab>
+            <v-tab  light class="tab-custom" to="/kegiatan">Kegiatan</v-tab>
+            <v-tab light class="tab-custom" to="/peserta">Peserta</v-tab>
         </v-tabs>
-        
-       
         <v-btn text disabled></v-btn>
-
         <v-btn
-            
             href="https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&ltmpl=forms&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
             target="_blank"
             color="primary"
         >
             <span class="">Masuk</span>
-            <!-- <v-icon>mdi-open-in-new</v-icon> -->
         </v-btn>
     </v-app-bar>
 </template>
@@ -60,22 +55,10 @@
     font-size: 16px !important;
     font-style: normal !important;
     font-weight: normal !important;
-    letter-spacing: 0px ;
-    line-height: normal;
+    letter-spacing: 0px !important;
+    line-height: normal !important;
 }
+
 </style>
 <script>
-// import HelloWorld from './components/HelloWorld';
-
-// export default {
-//   name: 'App',
-
-//   components: {
-//     HelloWorld,
-//   },
-
-//   data: () => ({
-//     //
-//   }),
-// };
 </script>
