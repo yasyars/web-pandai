@@ -29,9 +29,8 @@
         <v-tabs>
           <a light class="tab-custom scrollactive-item" href="#home">Beranda</a>
           <a light class="tab-custom scrollactive-item" href="#about">Tentang</a>
-          <a  light class="tab-custom scrollactive-item" href="#kegiatan">
-          Kegiatan</a>
-         <a light class="tab-custom scrollactive-item" href="#four">Pendaftaran</a>
+          <a  light class="tab-custom scrollactive-item" href="#kegiatan">Kegiatan</a>
+         <a light class="tab-custom scrollactive-item" href="#four">Peserta</a>
         </v-tabs>
         
         
@@ -64,11 +63,14 @@
     <router-view></router-view>
   </section>
 
-  <!-- <router-view></router-view> -->
-    <v-spacer></v-spacer>
-    <footer>
-      <Footer/>
-    </footer>
+  <section>
+    <Paket/>
+  </section>
+
+  <v-spacer></v-spacer>
+  <footer>
+    <Footer/>
+  </footer>
       
   </v-app>
   </div>
@@ -92,7 +94,7 @@
   a {
   padding: 1rem;
   flex-grow: 1;
-  color: #666;
+  color: rgb(172, 161, 161);
   text-decoration: none;
 
   &.-active {
@@ -126,6 +128,7 @@ import Footer from './components/Footer';
 import Home from './views/Home';
 import About from './views/About';
 // import Kegiatan from './views/Kegiatan';
+import Paket from './views/Paket';
 
 
 
@@ -138,6 +141,7 @@ export default {
     Home,
     About,
     // Kegiatan,
+    Paket,
   },
 
   data: () => ({
