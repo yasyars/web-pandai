@@ -63,9 +63,8 @@
     <router-view></router-view>
   </section>
 
-  <section>
-    <Paket/>
-  </section>
+  <KegiatanPaket/>
+
 
   <v-spacer></v-spacer>
   <footer>
@@ -128,7 +127,7 @@ import Footer from './components/Footer';
 import Home from './views/Home';
 import About from './views/About';
 // import Kegiatan from './views/Kegiatan';
-import Paket from './views/Paket';
+import KegiatanPaket from './views/KegiatanPaket';
 
 
 
@@ -141,7 +140,7 @@ export default {
     Home,
     About,
     // Kegiatan,
-    Paket,
+    KegiatanPaket,
   },
 
   data: () => ({
