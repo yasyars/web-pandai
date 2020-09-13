@@ -23,7 +23,7 @@
         <v-tabs>
             <v-tab light class="tab-custom" to="/">Beranda</v-tab>
             <v-tab light class="tab-custom" to="/about">Tentang</v-tab>
-            <v-tab  light class="tab-custom" to="/kegiatan">Kegiatan</v-tab>
+            <v-tab  light class="tab-custom" to="/list-kegiatan-paket">Kegiatan</v-tab>
             <v-tab light class="tab-custom" to="/peserta">Peserta</v-tab>
         </v-tabs>
         <v-btn text disabled></v-btn>

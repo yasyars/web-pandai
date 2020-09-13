@@ -31,13 +31,22 @@ const routes = [{
             import ('../views/ListBiro.vue')
     },
     {
-        path: "/list-paket",
+        path: "/list-kegiatan-paket",
         // redirect: {
         //     name: "ListBiro"
         // },
-        name: "List Paket",
+        name: "List Kegiatan Paket",
         component: () =>
-            import ('../views/ListPaket.vue')
+            import ('../views/KegiatanPaket.vue')
+    },
+    {
+        path: "/paket-standar",
+        // redirect: {
+        //     name: "ListBiro"
+        // },
+        name: "Paket Standar",
+        component: () =>
+            import ('../views/PaketStandar.vue')
     },
     {
         path: "/list-batch",
