@@ -1,7 +1,7 @@
 <template>
   <div class="kegiatanPaket">
     <!-- Page Title -->
-    <v-container fluid>
+    <v-container fluid style="padding-top: 72px">
       <v-row class="text-center">
         <v-col class="mb-4" cols="12" style="color: #E19000">
           <h1 class="display-2 font-weight-bold mb-3" style="margin-top: 30px">
@@ -39,10 +39,10 @@
             <!-- <v-btn text>Share</v-btn> -->
 
             <v-btn
-              color="#1CBDB5"
               text
+              text-color="#1CBDB5"
             >
-              Daftar Paket Standar
+            <router-link to="/paket-standar">Daftar Paket Standar</router-link>
             </v-btn>
 
             <v-spacer></v-spacer>
@@ -97,7 +97,7 @@
 
           <v-card-actions>
             <!-- <v-btn text>Share</v-btn> -->
-
+            
             <v-btn
               color="#1CBDB5"
               text
@@ -106,7 +106,7 @@
             </v-btn>
 
             <v-spacer></v-spacer>
-
+            
             <v-btn
               icon
               @click="showtambahan = !showtambahan"
