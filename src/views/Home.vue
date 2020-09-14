@@ -38,7 +38,7 @@
           cols="3"
           class="col-middle">
           <v-img
-            src="../assets/logo-pandai.png" >
+            src="../assets/logo-gerakan-pandai.png" >
           </v-img>
         </v-col>
         <v-col
@@ -190,7 +190,7 @@
             align="center"
             justify="center"
           >
-            <v-card>
+            <v-card class="shadow-sm">
               <a href="https://csedweek.org/" target="_blank">
               <v-img
                 :src="require('../assets/cs-education-week.jpg')"
